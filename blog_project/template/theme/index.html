@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Home-Harsh/Shivangi Tech-Blog Project</title>
+    
+    <!-- load stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"
+    />
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="{% static '' %}css/bootstrap.min.css" />
+    <!-- Bootstrap style -->
+    <link rel="stylesheet" href="{% static '' %}css/templatemo-style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      
+    <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+ 
+
+    <body >
+     
+     
+    <div class="tm-header">
+      <div class="container-fluid">
+        <div class="tm-header-inner">
+          <a href=" " class="navbar-brand tm-site-name">Tech-Blogging</a>
+         
+          <!-- navbar -->
+          <nav class="navbar tm-main-nav">
+
+            <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
+                &#9776;
+            </button>
+            
+            <div class="collapse navbar-toggleable-sm" id="tmNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="{% url 'blog_main:user_register' %}" class="nav-link">Register</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="{% url 'blog_main:user_login' %}" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'blog_data:success' %}" class="nav-link">Blogs</a>
+                    </li>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{% url 'blog_main:about' %}" class="nav-link">About us</a>
+                  </li>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'blog_main:contact' %}" class="nav-link">Contact us</a>
+                </li>
+                  
+                </ul>                        
+            </div>
+          </nav> 
+       
+        </div>
+      </div>
+    </div>
+  
+    <section class="tm-section">
+    
+  
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center">
+          <h2 class="tm-gold-text tm-title">Welcome !</h2>
+          <p class="tm-subtitle">
+            Welcome to the blogging website.
+            Our website will help you out in reading a bolg as well writing a blog , since our website is open and free for all the writer and reader.
+          
+          </p>
+          <a href="{% url 'blog_main:user_login' %}" class="tm-btn ">Create a blog</a>
+         
+        </div>
+      
+
+    
+    <section class="tm-section">
+      
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center"></div>
+          <h2 class="tm-gold-text tm-title" ><u>Blogs</u></h2>
+          
+          
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="tm-content-box">
+              <img
+                src="{% static '' %}img/binarytree.png"
+                alt="Image"
+                class="tm-margin-b-20 img-fluid"
+              />
+              <h4 class="tm-margin-b-20 tm-gold-text">Binary Tree</h4>
+              <p class="tm-margin-b-20">
+                A tree whose elements have at most 2 children is called a binary tree. Since each element in a binary tree can have only 2 children.A Binary Tree node contains following parts.
+
+                Data,
+                Pointer to left child,
+                Pointer to right child.
+              </p>
+              <a href="https://www.geeksforgeeks.org/binary-tree-data-structure/" class="tm-btn text-uppercase">Detail</a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="tm-content-box">
+              <img
+                src="{% static '' %}img/pointers.png"
+                alt="Image"
+                class="tm-margin-b-20 img-fluid"
+              />
+              <h4 class="tm-margin-b-20 tm-gold-text">Pointers</h4>
+              <p class="tm-margin-b-20">
+                In computer science, a pointer is an object in many programming languages that stores a memory address. This can be that of another value located in computer memory, or in some cases, that of memory-mapped computer hardware
+              </p>
+              <a href="https://en.wikipedia.org/wiki/Pointer_(computer_programming)" class="tm-btn text-uppercase">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="tm-content-box">
+              <img
+                src="{% static '' %}img/stack.png"
+                alt="Image"
+                class="tm-margin-b-20 img-fluid"
+              />
+              <h4 class="tm-margin-b-20 tm-gold-text">Stacks </h4>
+              <p class="tm-margin-b-20">
+                A Stack is a linear data structure that follows the LIFO (Last-In-First-Out) principle. Stack has one end, whereas the Queue has two ends (front and rear). It contains only one pointer top pointer pointing to the topmost element of the stack.
+              </p>
+              <a href="https://www.javatpoint.com/data-structure-stack" class="tm-btn text-uppercase">Detail</a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="tm-content-box">
+              <img
+                src="{% static '' %}img/array.png"
+                alt="Image"
+                class="tm-margin-b-20 img-fluid"
+              />
+              <h4 class="tm-margin-b-20 tm-gold-text">Array</h4>
+              <p class="tm-margin-b-20">
+                An Array is a sequential collection of elements, of the same data type. They are stored sequentially in memory. An Array is a data structure that holds a similar type of elements. The array elements are not treated as objects in c like they are in java.
+              </p>
+                <a href="https://www.edureka.co/blog/arrays-in-c/" class="tm-btn text-uppercase">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      
+        
+
+        
+
+
+                <div class="row tm-2-rows-md-down-1 tm-margin-t-mid">
+                  <div
+                    class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+                  >
+                    <h3 class="tm-gold-text tm-title tm-margin-b-30"><u>  Related Blogsf</u>
+                    
+                    </h3>
+                    <div class="media tm-related-post">
+                      <div class="media-left media-middle">
+                        <a href="https://www.geeksforgeeks.org/queue-data-structure/">
+                          <img
+                            class="media-object"
+                            src="{% static '' %}img/Queue.png"
+                            alt="Generic placeholder image"
+                          />
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <a href="https://www.geeksforgeeks.org/queue-data-structure/"
+                          ><h4
+                            class="media-heading tm-gold-text tm-margin-b-15"
+                          >
+                          Queue Data Structures
+                          </h4></a
+                        >
+                        <p class="tm-small-font tm-media-description">
+                          A Queue is a linear structure which follows a particular order in which the operations are performed. The order is First In First Out (FIFO). A good example of a queue is any queue of consumers for a resource where the consumer that came first is served first. The difference between stacks and queues is in removing. In a stack we remove the item the most recently added; in a queue, we remove the item the least recently added.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="media tm-related-post">
+                      <div class="media-left media-middle">
+                        <a href="https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm#:~:text=A%20linked%20list%20is%20a,of%20links%20which%20contains%20items.&text=Next%20%E2%88%92%20Each%20link%20of%20a,the%20first%20link%20called%20First.">
+                          <img
+                            class="media-object"
+                            src="{% static '' %}img/linked list.png"
+                            alt="Generic placeholder image"
+                          />
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <a href="https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm#:~:text=A%20linked%20list%20is%20a,of%20links%20which%20contains%20items.&text=Next%20%E2%88%92%20Each%20link%20of%20a,the%20first%20link%20called%20First."
+                          ><h4
+                            class="media-heading tm-gold-text tm-margin-b-15"
+                          >
+                          Linked List 
+                          </h4></a
+                        >
+                        <p class="tm-small-font tm-media-description">
+                          Linked List is a sequence of links which contains items. Each link contains a connection to another link. Linked list is the second most-used data structure after array. Following are the important terms to understand the concept of Linked List.
+
+Link − Each link of a linked list can store a data called an element.
+
+Next − Each link of a linked list contains a link to the next link called Next.
+
+LinkedList − A Linked List contains the connection link to the first link called First.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="media tm-related-post">
+                      <div class="media-left media-middle">
+                        <a href="https://stackify.com/oop-concept-for-beginners-what-is-encapsulation/">
+                          <img
+                            class="media-object"
+                            src="{% static '' %}img/Encapsulation.jpg"
+                            alt="Generic placeholder image"
+                          />
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <a href="https://stackify.com/oop-concept-for-beginners-what-is-encapsulation/"
+                          ><h4
+                            class="media-heading tm-gold-text tm-margin-b-15"
+                          >
+                          Encapsulation in OOP's
+                          </h4></a
+                        >
+                        <p class="tm-small-font tm-media-description">
+                          Encapsulation describes the idea of bundling data and methods that work on that data within one unit, like a class in Java. This concept is also often used to hide the internal representation, or state of an object from the outside. This is called information hiding.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+    </section>
+
+    <footer class="tm-footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="tm-footer-content-box">
+              <h3 class="tm-gold-text tm-title tm-footer-content-box-title">
+                Contact Developer
+              </h3>
+              <div class="tm-gray-bg">
+                <p>
+                  
+                <p>
+                 Shivangi Gupta<br>
+                
+                   (Python + Django Intern)<br>
+                   Spectrics Soultions Pvt.Ltd
+                  </p>
+                 
+                <p type=mail><strong>Email:-</strong></p>
+                <p type=mail><strong>guptashivangi95366@gmail.com</strong></p>
+              </div>
+              
+              
+            </div>
+            
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="tm-footer-content-box">
+              <h3 class="tm-gold-text tm-title tm-footer-content-box-title">
+              .....  
+              </h3>
+              
+              <div class="tm-gray-bg">
+                <p>
+                  
+                <p>
+                 Harsh Pathak<br>
+                
+                   (Python + Django Intern)<br>
+                   Spectrics Soultions Pvt.Ltd
+                  </p>
+                 
+                <p type=mail><strong>Email:-</strong></p>
+                <p type=mail><strong>06hpathak@gmail.com</strong></p>
+                
+              </div>
+              
+            </div>
+            
+          </div>
+
+              
+                  
+                         
+           
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="tm-footer-content-box tm-footer-links-container">
+              <h3 class="tm-gold-text tm-title tm-footer-content-box-title">
+                Menu
+              </h3>
+              <nav>
+                <ul class="nav">
+                  <li>
+                    <a href="#" class="tm-footer-link"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a href="{% url 'blog_main:user_register' %}"  class="tm-footer-link">Register</a>
+                  </li>
+                  <li>
+                    <a href="{% url 'blog_main:user_login' %}" class="tm-footer-link"
+                      >Login</a
+                    >
+                  </li>
+                  <li>
+                    <a href="{% url 'blog_data:success' %}" class="tm-footer-link">Blogs</a>
+                  </li>
+                  <li>
+                    <a href="{% url 'blog_main:about' %}" class="tm-footer-link"
+                      >About us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="{% url 'blog_main:contact' %}" class="tm-footer-link"
+                      >Contact us</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Add the extra clearfix for only the required viewport 
+                        http://stackoverflow.com/questions/24590222/bootstrap-3-grid-with-different-height-in-each-item-is-it-solvable-using-only
+                    -->
+        
+
+          
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="tm-footer-content-box">
+              <h3 class="tm-gold-text tm-title tm-footer-content-box-title">
+                About Company
+              </h3>
+              <div class="tm-margin-b-30">
+                
+              <p class="tm-margin-b-20">
+                Spectrics Solutions Pvt. Ltd. Is not a globally recognized IT Company but also a family
+
+                filled with talented experts that help global brands, enterprises, mid-size businesses or even startups with innovative solutions.
+              </p>
+              <a href="https://spectricssolutions.com/" class="tm-btn tm-btn-gray text-uppercase">Browse</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 tm-copyright-col">
+            <p class="tm-copyright-text">Copyright 2021 Spectrics Solutions Pvt.Ltd (Blog Project - Harsh and Shivangi)</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- load JS files -->
+    <script src="{% static '' %}js/jquery-1.11.3.min.js"></script>
+    <!-- jQuery (https://jquery.com/download/) -->
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h -->
+    <script src="{% static '' %}js/bootstrap.min.js"></script>
+    <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
+  </body>
+</html>
